@@ -1,0 +1,22 @@
+           <?php
+            if($resCar->num_rows == 0){
+                echo "No result";
+            }elseif($resCar->num_rows == 1){
+                $row = $resCar->fetch_assoc();
+                echo $row["model"]. " " . $row["type"]. " ". $row["color"] . " ".$row ["available"] . " ". $row["image"] . "<a href ='booking.php?id=" .$row["car_id"] . "'>Booking now</a><br>";
+            } else{
+                $rows = $resCar ->fetch_all(MYSQLI_ASSOC);
+                foreach ($rows as $value){
+                    echo $value["car_id"]. " ----- " .$value["model"]. " " . $value ["type"]. " " . $value["color"]. " ". $value["image"]. " " . $value["available"] . "<a href ='booking.php?id=" .$value["car_id"] . "'>Booking now</a><br>";
+                }
+            }
+
+           ?>
+
+
+           
+Elke M.  13:03 Uhr
+I did not yet succeed with the admin, but for the name&photo, that at least: just insert a column into the users table in your database with image (eg https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909__340.png), and then add this code to your home.php :lächeln:, done:<div>
+<img class="img" src="<?php echo $userRow['userImage' ];?>">
+<p class="name">User: <?php echo $userRow['userName' ]; ?></p>
+</div>

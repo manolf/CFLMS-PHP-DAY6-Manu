@@ -1,0 +1,51 @@
+body {
+  font-family: "Roboto", sans-serif; }
+
+h1, h2{
+    color: limegreen;
+    text-align: center;
+  }
+
+/* .foto{
+ width: 60%;
+ height: 100%;
+} */
+
+.parallax_section1 {
+  height: 200px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 100% auto;
+  position: relative; }
+
+.parallax_section2 {
+  min-height: 150px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 100% auto;
+  position: relative; }
+
+.parallax_image {
+  background-image: url(img/parallax.jpg); }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.card:hover {
+  transform: scale(1.05); }
+
+.card {
+  margin: 20px 10px 20px 10px;
+  padding: 20px 20px 20px 20px;
+  transition: all 0.5s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8); 
+  width: 30%;
+}
+
+.form{
+  width : 40%;
+}

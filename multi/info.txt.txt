@@ -1,0 +1,15 @@
+database: booking
+admin: waldo@web.de waldemar
+user: yanceen@yahoo.com waldemar
+
+style: login
+style: home --> user landing page with pictures and navbar! and parallax
+2do: dynamic -> class DB in db.php for crud stuff
+2do: admin and user login: update, delete, insert: just for admin
+2do: booking: just for user
+2do: read: for all of them
+--
+2do: with classes?
+
+
+
